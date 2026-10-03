@@ -1,0 +1,93 @@
+# Golden pages: ground truth for this report, read off the PDF page image and checked by `pnpm ingest verify`.
+# Format and rules: @rtm/ingest src/golden.ts and the site's docs/quality-harness.md ("Golden pages").
+# A page marked xfail is a known pipeline defect: it stays red here, verify stays green, and the bead says why.
+# The PDF carries no folios; pages are numbered by PDF page (pdfPageNumbers), so `printed` equals `pdf`.
+pages:
+  # An ordinary body page: five numbered paragraphs with a hanging indent, two page-foot notes set "9<tab>Most of…".
+  - pdf: 8
+    printed: 8
+    verified_by: "Claude (Opus 5.5), 2026-10-04, against the page image"
+    features: [ordinary, F]
+    blocks:
+      - paragraph: {start: "1.10. The impact upon those wrongly", end: "persons have also suffered considerably.", notes: [9]}
+      - paragraph: {start: "1.11. Almost as soon as Legacy", end: "occasions Horizon produced false data."}
+      - paragraph: {start: "1.12. In 2009 the organisation was", end: "contentions were accepted without reservation.", notes: [10]}
+      - paragraph: {start: "1.13. From the moment of my", end: "all aspects of the Inquiry."}
+      - paragraph: {start: "1.14. I have formed the view", end: "to be ready for publication."}
+    footnotes: [9, 10]
+    markers: [9, 10]
+  # A chapter opening (Roboto 27 bold), then a lettered sub-section the contents lists (Open Sans 20 bold), three paragraphs.
+  - pdf: 12
+    printed: 12
+    verified_by: "Claude (Opus 5.5), 2026-10-04, against the page image"
+    features: [H, F]
+    blocks:
+      - heading: "THE HUMAN IMPACT"
+        level: 2
+      - heading: "a. Introduction"
+        level: 3
+      - paragraph: {start: "3.1. It is almost impossible to", end: "more, over the coming months."}
+      - paragraph: {start: "3.2. The scale of the suffering", end: "driven to despair and suicide."}
+      - paragraph: {start: "3.3. In this \"Human Impact\" section,", end: "discovery of Horizon related shortfalls.", notes: [15, 16]}
+    footnotes: [15, 16]
+    markers: [15, 16]
+  # A sub-section in Roboto 20 bold, then the first case illustration's name in Open Sans 18 italic, seven paragraphs, no notes.
+  - pdf: 22
+    printed: 22
+    verified_by: "Claude (Opus 5.5), 2026-10-04, against the page image"
+    features: [H]
+    blocks:
+      - heading: "c. Case Illustrations"
+        level: 3
+      - heading: "Martin Griffiths (Deceased)"
+        level: 4
+      - paragraph: {start: "3.46. Mr Martin Griffiths and his", end: "running of the post office."}
+      - paragraph: {start: "3.47. For years, Mr Griffiths had", end: "his contract as a postmaster."}
+      - paragraph: {start: "3.48. From about 2009 onwards Mr", end: "totalled as much as £102,000."}
+      - paragraph: {start: "3.49. On 2 May 2013 a", end: "for part of the loss."}
+      - paragraph: {start: "3.50. On 23 September 2013, approximately", end: "died in hospital aged 59."}
+      - paragraph: {start: "3.51. By the date of his", end: "of Mr and Mrs Griffiths."}
+      - paragraph: {start: "3.52. Mr Griffiths' death was and", end: "children and other close family."}
+    footnotes: []
+    markers: []
+  # The Select Committee's ten-point plan: an inset quoted list, each item's wrapped line set after a blank line.
+  - pdf: 104
+    printed: 104
+    verified_by: "Claude (Opus 5.5), 2026-10-04, against the page image"
+    features: [Q, A, F]
+    xfail: reportsthatmatter-ud34
+    xfail_only: [blocks, must_be_quote]
+    blocks:
+      - paragraph: {start: "4.278. On 5 November 2024, the", end: "of the Committee with care.", notes: [249, 250, 251]}
+      - paragraph: {start: "4.279. The Committee regarded HSS as", end: "was in the following terms:", notes: [252]}
+      - quote: {start: "\"1. The Post Office should be", end: "to claimants through the HSS."}
+      - quote: {start: "2. If the Post Office cannot", end: "standard payments for simple cases."}
+      - quote: {start: "3. Claimants should be provided up-front", end: "paid for by the scheme's administrators."}
+      - quote: {start: "4. There should be an explicit", end: "that is swift and fair."}
+      - quote: {start: "5. The Independent Panel must meet", end: "cases have been assessed."}
+      - quote: {start: "6. An independent adjudicator should be", end: "manager throughout the scheme."}
+      - quote: {start: "7. Claimants should be given the", end: "in support of a claim."}
+      - quote: {start: "8. Offers should be made at", end: "for each category of loss."}
+      - quote: {start: "9. Challenged offers should move into", end: "by the Independent Panel."}
+      - quote: {start: "10. Binding timeframes for each stage", end: "those deadlines are not met.\"", notes: [253]}
+    footnotes: [249, 250, 251, 252, 253]
+    markers: [249, 250, 251, 252, 253]
+    must_be_quote: ["The Post Office should be removed from delivering redress to claimants through the HSS."]
+  # Paragraph 4.293's marker 265 wraps to the start of a line ("265 Mr Staunton received…"): one paragraph, five notes.
+  - pdf: 107
+    printed: 107
+    verified_by: "Claude (Opus 5.5), 2026-10-04, against the page image"
+    features: [F, H]
+    xfail: reportsthatmatter-54li
+    xfail_only: [blocks, markers]
+    blocks:
+      - paragraph: {start: "4.288. For the avoidance of any", end: "sum or the fixed sum."}
+      - paragraph: {start: "4.289. For completeness I should mention", end: "costs incurred under all schemes\".", notes: [261]}
+      - paragraph: {start: "4.290. The Department published its response", end: "first offers\" under the scheme.", notes: [262, 263]}
+      - paragraph: {start: "4.291. On 25 March 2025 the", end: "further response from the Department.", notes: [264]}
+      - paragraph: {start: "4.292. I do not regard it", end: "opinion which cannot be ignored."}
+      - heading: "Delaying Financial Redress"
+        level: 4
+      - paragraph: {start: "4.293. In his witness statement dated", end: "meeting more or less contemporaneously.", notes: [265]}
+    footnotes: [261, 262, 263, 264, 265]
+    markers: [261, 262, 263, 264, 265]
