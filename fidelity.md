@@ -1,6 +1,6 @@
 # Fidelity review — Post Office Horizon IT Inquiry Report, Volume 1
 
-Pages: 165  ·  Footnotes: 345  ·  Auto-fixes applied: 0  ·  Human corrections: 0
+Pages: 165  ·  Footnotes: 345  ·  Auto-fixes applied: 0  ·  Human corrections: 11
 
 **34 open**, 0 reviewed and judged correct.
 

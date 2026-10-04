@@ -50,13 +50,13 @@ pages:
       - paragraph: {start: "3.52. Mr Griffiths' death was and", end: "children and other close family."}
     footnotes: []
     markers: []
-  # The Select Committee's ten-point plan: an inset quoted list, each item's wrapped line set after a blank line.
+  # The Select Committee's ten-point plan: an inset quoted list, each item's wrapped line set after a blank line (joined by corrections c-0004 to c-0011); item 8 is still not a quotation (ud34).
   - pdf: 104
     printed: 104
     verified_by: "Claude (Opus 5.5), 2026-10-04, against the page image"
     features: [Q, A, F]
     xfail: reportsthatmatter-ud34
-    xfail_only: [blocks, must_be_quote]
+    xfail_only: [blocks]
     blocks:
       - paragraph: {start: "4.278. On 5 November 2024, the", end: "of the Committee with care.", notes: [249, 250, 251]}
       - paragraph: {start: "4.279. The Committee regarded HSS as", end: "was in the following terms:", notes: [252]}
@@ -73,13 +73,11 @@ pages:
     footnotes: [249, 250, 251, 252, 253]
     markers: [249, 250, 251, 252, 253]
     must_be_quote: ["The Post Office should be removed from delivering redress to claimants through the HSS."]
-  # Paragraph 4.293's marker 265 wraps to the start of a line ("265 Mr Staunton received…"): one paragraph, five notes.
+  # Paragraph 4.293's marker 265 is set alone on its own line ("265" then "Mr Staunton received…"): one paragraph, five notes (joined by correction c-0001, 54li).
   - pdf: 107
     printed: 107
     verified_by: "Claude (Opus 5.5), 2026-10-04, against the page image"
     features: [F, H]
-    xfail: reportsthatmatter-54li
-    xfail_only: [blocks, markers]
     blocks:
       - paragraph: {start: "4.288. For the avoidance of any", end: "sum or the fixed sum."}
       - paragraph: {start: "4.289. For completeness I should mention", end: "costs incurred under all schemes\".", notes: [261]}
