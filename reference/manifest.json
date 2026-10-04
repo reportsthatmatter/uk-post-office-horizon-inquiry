@@ -1,0 +1,33 @@
+{
+  "report": "uk-post-office-horizon-inquiry",
+  "set": "held-out",
+  "edition": "Volume 1's PDF's own structure tree (tagged PDF, InDesign styles: Heading_1-3, List_Paragraph, Note/Footnote_text, role-mapped)",
+  "licence": "Crown copyright, reused under the Open Government Licence v3.0 (https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).",
+  "fetched": "2026-10-04",
+  "sources": [
+    {
+      "path": "archive/post-office-horizon-it-inquiry-vol1-hc1119.pdf",
+      "sha256": "ebdd61c68bf32b916c10037293d851921f9e422fb3fac54558f26ec6c143308e",
+      "bytes": 1176953
+    }
+  ],
+  "sources_note": "The reference is derived from the source PDF already in archive/, so no copy is kept under reference/raw/.",
+  "blocks": {
+    "path": "reference/blocks.jsonl",
+    "sha256": "305729553bf185f9b09a87171498e2cd7883779fb12725df26f3756bd962db3b",
+    "normaliser": "reportsthatmatter scripts/score/reference.py, adapter tagged, version 2",
+    "built": "2026-10-04",
+    "counts": {
+      "heading": 66,
+      "note": 345,
+      "paragraph": 929
+    },
+    "markers": 345,
+    "markers_linked": 345,
+    "words": 66416
+  },
+  "caveats": [
+    "A new publisher family (the Post Office Horizon IT Inquiry), so held out: score it, do not tune passes on it.",
+    "Matthew Somerville's HTML (postofficeinquiry.dracos.co.uk/report/volume-1/) is a second candidate reference, not used."
+  ]
+}

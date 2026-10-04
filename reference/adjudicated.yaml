@@ -1,0 +1,215 @@
+report: uk-post-office-horizon-inquiry
+adjudicated: 2026-10-04
+by: "Claude (Sonnet 5.5), reading the rendered page images"
+method: "Held-out reference (tagged-PDF blocks, reference/blocks.jsonl): 30 page breaks drawn by `pnpm score --adjudicate-draft` (29 random, 1 where our text and the reference disagree; seeded). Each was decided from the rendered page images (the foot of the old page stacked over the head of the new one, 85 dpi), not from the text layer, before looking at either side's label. Question: does a new block (numbered paragraph, heading, quotation, list item) start between the two printed body lines, or does the block run on. Unnumbered flush paragraphs under a numbered paragraph at a page top are continuations. prev and next are the dataset's lines (notes skipped)."
+breaks:
+  - page: 3
+    prev: "Volume 1"
+    next: "Post Office "
+    verdict: split
+    stratum: random
+    image: true
+    note: "cover page: title block then the inquiry name; new block"
+  - page: 11
+    prev: "independent of the Department and the Post Office.   "
+    next: "10.  The Department shall issue a supplementary document/ann"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 15
+    prev: "are sadly not able to provide evidence to the Inquiry today."
+    next: "Persons who were prosecuted"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 16
+    prev: "ntially, the likelihood of an immediate custodial sentence. "
+    next: "3.16. From the evidence I have heard, it seems very likely t"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 17
+    prev: "in bankruptcy proceedings. "
+    next: "3.21. Second, there would probably be much adverse publicity"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 20
+    prev: "Arrangement (“IVA”). "
+    next: "3.36. This is not the occasion for a full description of the"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 21
+    prev: "follow."
+    next: "Impacts on the immediate family "
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 24
+    prev: "about 21 months elapsed."
+    next: "3.59. While Mr Butoy was serving his sentence of imprisonmen"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 25
+    prev: " quashed  by  the  Court  of  Appeal  (Criminal  Division)  "
+    next: "Jacqueline McDonald"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 26
+    prev: "she was still a serving prisoner. "
+    next: "Mrs McDonald had anticipated seeing her daughter on her 18th"
+    verdict: join
+    stratum: disagreement
+    image: true
+    note: "unnumbered continuation of paragraph 3.71 (hanging indent, no number)"
+  - page: 27
+    prev: "she was sentenced to a term of 18 months’ imprisonment.   "
+    next: "3.81. In fact, Ms Powell was released from prison after appr"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 28
+    prev: "much less strained.  "
+    next: "Damian Owen"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 49
+    prev: "out them by Ministers, the Department and the Post Office.  "
+    next: "The governance of the financial redress schemes"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 55
+    prev: "independent advisory panels may have operated in practice.  "
+    next: "August 2022 to 31 March 2025"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 70
+    prev: "the Fixed Sum Offer in HSS at £75,000."
+    next: "Possible Further Changes to HSS"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 74
+    prev: "seven claims had been resolved by mediation at some point.  "
+    next: "Claims submitted between 28 November 2020 and 31 December 20"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 75
+    prev: "meeting process.  "
+    next: "4.132.  The picture which emerges from Mr Recaldin’s 10th Wi"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 78
+    prev: "under the merged OCS/HCRS schemes.140"
+    next: "22 July 2021 to 17 July 2023 "
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 86
+    prev: "of this change at paragraphs 6.191 - 6.194 below.  "
+    next: "The Number and Progress of Claims and the Sums Paid"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 103
+    prev: "be given anonymised information about individual cases. "
+    next: "However, the department endorses the view expressed by the B"
+    verdict: join
+    stratum: random
+    image: true
+    note: "by content: a quoted Department response; the sentence after 'individual cases.' ('However, the department endorses...') carries on the same quoted paragraph, no spacing cue at the page top"
+  - page: 110
+    prev: "credible claims against POL”.274"
+    next: "4.302 .  However, the reality is that the words “full and fa"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 135
+    prev: "making an offer which exceeds the sum suggested by a panel."
+    next: "6.78.    In  my  view, Recommendations 2 to 8 inclusive shou"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 136
+    prev: "a binding determination."
+    next: "6.84.    I have given close consideration to whether this re"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 137
+    prev: "ted in the sense that permission to appeal is not required. "
+    next: "That is to be contrasted with the process for appealing in t"
+    verdict: join
+    stratum: random
+    image: true
+    note: "unnumbered continuation of paragraph 6.91 (hanging indent, no number)"
+  - page: 144
+    prev: "if successful, would lead to very large sums being paid out "
+    next: "by way of financial redress. Third, although the Post Office"
+    verdict: join
+    stratum: random
+    image: true
+    note: "mid-sentence continuation of paragraph 6.130"
+  - page: 149
+    prev: " significant number of cases. While some of the submissions "
+    next: "made on behalf of Core Participants made it clear that the p"
+    verdict: join
+    stratum: random
+    image: true
+    note: "mid-sentence continuation of paragraph 6.153"
+  - page: 159
+    prev: "ut also consistency between claimants in different schemes. "
+    next: "6.209.    I am much less inclined to support “a centre of ex"
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 161
+    prev: "e, Fujitsu or the Department under the law of tort for pure "
+    next: "economic loss, physical or psychiatric illness or major dist"
+    verdict: join
+    stratum: random
+    image: true
+    note: "mid-sentence continuation of paragraph 6.220"
+  - page: 162
+    prev: "of providing redress to close family members which is fair. "
+    next: "6.227.   I have ended the last paragraph with the word fair "
+    verdict: split
+    stratum: random
+    image: true
+    note: ""
+  - page: 166
+    prev: "ere not postmasters or directly employed by the Post Office."
+    next: "ISBN 978-1-5286-5867-6 "
+    verdict: split
+    stratum: random
+    image: true
+    note: "colophon: the ISBN line on the last page; new block"

@@ -1,0 +1,83 @@
+# Human judgements about this document's text, applied deterministically as a
+# final pipeline pass, so re-running reproduces the same output.
+#
+# A correction describes the text; a pass describes how to read the source.
+# If you are writing one to undo something the parser did, you needed a pass
+# or a bug fix instead — see scripts/ingest/README.md.
+#
+# Every correction must match exactly once. Zero matches, or more than one,
+# fails the build naming the id: a stale correction is a loud error rather
+# than rotting quietly into a lie about what was reviewed.
+#
+# These eleven are one-offs of this PDF's layout, checked against the page images
+# (gqsy.2.1, 2026-10-04): a note marker alone on its own line (p.107, 54li), and
+# list items set with a blank line inside the item (p.9, p.104, ud34). A pass
+# that joins a continuation at the item's text inset would retire them.
+version: 1
+corrections:
+  - id: c-0001
+    where: { volume: 1, printed: 107 }
+    find: "Ms Sarah Munby. 265\n\nMr Staunton received"
+    replace: "Ms Sarah Munby.[^265] Mr Staunton received"
+    reason: "the marker for note 265 is set alone on its own line (PDF p.107); the paragraph 4.293 runs on (54li)"
+    added: 2026-10-04
+  - id: c-0002
+    where: { volume: 1, printed: 9 }
+    find: "Issues relating to Compensation\"\n\n(\"the Progress Update\")"
+    replace: "Issues relating to Compensation\" (\"the Progress Update\")"
+    reason: "list item (i) of 1.16 wraps over a blank line; one item (ud34)"
+    added: 2026-10-04
+  - id: c-0003
+    where: { volume: 1, printed: 9 }
+    find: "Issues relating to Compensation\"\n\n(\"the Chair's Statement\")"
+    replace: "Issues relating to Compensation\" (\"the Chair's Statement\")"
+    reason: "list item (ii) of 1.16 wraps over a blank line; one item (ud34)"
+    added: 2026-10-04
+  - id: c-0004
+    where: { volume: 1, printed: 104 }
+    find: "to claimants\n\nthrough the HSS."
+    replace: "to claimants through the HSS."
+    reason: "item 1 of the Committee's ten-point plan wraps over a blank line (ud34)"
+    added: 2026-10-04
+  - id: c-0005
+    where: { volume: 1, printed: 104 }
+    find: "complex cases should\n\nbe transferred"
+    replace: "complex cases should be transferred"
+    reason: "item 2 of the ten-point plan wraps over a blank line (ud34)"
+    added: 2026-10-04
+  - id: c-0006
+    where: { volume: 1, printed: 104 }
+    find: "the scheme's\n\nadministrators."
+    replace: "the scheme's administrators."
+    reason: "item 3 of the ten-point plan wraps over a blank line (ud34)"
+    added: 2026-10-04
+  - id: c-0007
+    where: { volume: 1, printed: 104 }
+    find: "until the majority of cases have\n\nbeen assessed."
+    replace: "until the majority of cases have been assessed."
+    reason: "item 5 of the ten-point plan wraps over a blank line (ud34)"
+    added: 2026-10-04
+  - id: c-0008
+    where: { volume: 1, printed: 104 }
+    find: "case manager\n\nthroughout the scheme."
+    replace: "case manager throughout the scheme."
+    reason: "item 6 of the ten-point plan wraps over a blank line (ud34)"
+    added: 2026-10-04
+  - id: c-0009
+    where: { volume: 1, printed: 104 }
+    find: "the evidence provided\n\nin support of a claim."
+    replace: "the evidence provided in support of a claim."
+    reason: "item 7 of the ten-point plan wraps over a blank line (ud34)"
+    added: 2026-10-04
+  - id: c-0010
+    where: { volume: 1, printed: 104 }
+    find: "rather than be reas-\n\nsessed by the Independent Panel."
+    replace: "rather than be reassessed by the Independent Panel."
+    reason: "item 9 of the ten-point plan wraps over a blank line, at a hyphen (ud34)"
+    added: 2026-10-04
+  - id: c-0011
+    where: { volume: 1, printed: 104 }
+    find: "should be imposed, with\n\nfinancial penalties"
+    replace: "should be imposed, with financial penalties"
+    reason: "item 10 of the ten-point plan wraps over a blank line (ud34)"
+    added: 2026-10-04

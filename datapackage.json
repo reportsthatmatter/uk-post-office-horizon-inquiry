@@ -1,0 +1,31 @@
+{
+  "name": "uk-post-office-horizon-inquiry",
+  "title": "Post Office Horizon IT Inquiry Report, Volume 1",
+  "resources": [
+    {
+      "title": "Post Office Horizon IT Inquiry Report, Volume 1 (HC 1119, ISBN 978-1-5286-5867-6), the Inquiry's PDF as re-uploaded 9 July 2025",
+      "path": "archive/post-office-horizon-it-inquiry-vol1-hc1119.pdf",
+      "format": "pdf",
+      "mediatype": "application/pdf",
+      "bytes": 1176953,
+      "hash": "sha256:ebdd61c68bf32b916c10037293d851921f9e422fb3fac54558f26ec6c143308e",
+      "sources": [
+        {
+          "title": "INQ00002037 - Volume 1 of the Post Office Horizon IT Inquiry's final report",
+          "web": "https://www.postofficehorizoninquiry.org.uk/sites/default/files/2025-07/Post%20Office%20Horizon%20IT%20Inquiry%20Final%20Report%20Volume%201_0.pdf"
+        },
+        {
+          "title": "Landing page",
+          "web": "https://www.postofficehorizoninquiry.org.uk/volume-1-post-office-horizon-it-inquirys-final-report"
+        }
+      ]
+    }
+  ],
+  "licenses": [
+    {
+      "name": "OGL-UK-3.0",
+      "title": "Open Government Licence v3.0",
+      "path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+    }
+  ]
+}
