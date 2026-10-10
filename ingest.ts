@@ -39,7 +39,11 @@ export default pipeline({
   ],
   passes: [
     // A paragraph run over a page break joins when the layout says it runs on (p.107 to p.108, 4.293).
-    layoutPageJoins(),
+    // numberedBody: every body paragraph is numbered, so a page that opens on unnumbered text at the hanging
+    // indent carries on the paragraph above even past a full stop: 3.71 "…she was still a serving prisoner." /
+    // "Mrs McDonald had anticipated…" (p.26), 5.4's list of recommendations "…Sixth, …" / "They should,
+    // rather, …" (p.118); six joins, each read against the page (reportsthatmatter-sh1b).
+    layoutPageJoins({ numberedBody: true }),
     // A quotation running over a page arrives as two.
     quoteListRunOns(),
     // "Post Office Horizon IT Inquiry Report: Volume 1" heads every page from p.5 on.
