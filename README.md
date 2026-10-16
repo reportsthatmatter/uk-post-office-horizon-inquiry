@@ -38,6 +38,10 @@ Sourcing checklist:
 
 Layout notes: single column; numbered paragraphs ("1.10.") with a hanging indent; notes at the page foot in Arial with the number flush and the text at a tab stop; InDesign "indent to here" characters (U+0007) in the text layer before every note's text; no folios; quotations and the Select Committee's ten-point plan (p.104) set as inset numbered lists with a blank line between an item's lines.
 
+## Licence
+
+Text of the report: Crown copyright 2025, Open Government Licence v3.0. Our markup, processing and editorial additions: CC BY 4.0. Code: MIT. Evidence, caveats and the full statement are in [LICENSE](LICENSE); the MIT text is in [LICENSE-MIT](LICENSE-MIT).
+
 ## Build
 
 `ingest.ts` declares how the report is turned into Markdown. Rebuild from the site repo with `pnpm ingest run uk-post-office-horizon-inquiry`. `fidelity.md` lists the words the pipeline flagged for review.
